@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
 const Home = () => {
    return (
-      <div>
-         <h2>This is test </h2>
+      <div className='container'>
+         <Button className='btn btn-primary mt-5'>Add New User</Button>
       </div>
    )
 }
