@@ -23,7 +23,7 @@ const Home = () => {
                   {
                      users.map(user => [
                         <tr>
-                           <td>1</td>
+                           <td>{user.id} </td>
                            <td>{user.name}</td>
                            <td> {user.position} </td>
                            <td> {user.salary} </td>
