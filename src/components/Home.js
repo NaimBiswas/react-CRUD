@@ -5,7 +5,6 @@ import { UserContext } from './UserContext/UserContext';
 const Home = () => {
    const [users, setUsers] = useContext(UserContext);
 
-
    return (
       <div className='container'>
          <Button variant='outline-success mt-5 mb-2'>Add New User</Button>
@@ -14,9 +13,10 @@ const Home = () => {
                <thead>
                   <tr>
                      <th>#</th>
-                     <th>First Name</th>
-                     <th>Last Name</th>
-                     <th>Username</th>
+                     <th>Name</th>
+                     <th>Position </th>
+                     <th>Salary</th>
+                     <th>Action</th>
                   </tr>
                </thead>
                <tbody>
@@ -25,20 +25,13 @@ const Home = () => {
                      <td>Mark</td>
                      <td>Otto</td>
                      <td>@mdo</td>
+                     <td>
+                        <Button variant='outline-danger ml-1 btn-md'>Remove</Button>
+                        <Button variant='outline-info ml-1 btn-md'>Show</Button>
+                        <Button variant='outline-warning  ml-1 btn-md'>Edit</Button>
+                     </td>
                   </tr>
-                  <tr>
-                     <td>2</td>
-                     <td>Jacob</td>
-                     <td>Thornton</td>
-                     <td>@fat</td>
-                  </tr>
-                  <tr>
-                     <td>3</td>
-                     <td
-                        // @ts-ignore
-                        colSpan="2">Larry the Bird</td>
-                     <td>@twitter</td>
-                  </tr>
+
                </tbody>
             </Table>
          </div>
