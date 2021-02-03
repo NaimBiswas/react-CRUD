@@ -29,7 +29,7 @@ const Home = () => {
                            <td> {user.position} </td>
                            <td> {user.salary} </td>
                            <td>
-                              <Link to='/delete'>
+                              <Link to={'/delete/' + user.id}>
                                  <Button variant='outline-danger ml-1 btn-md'>Remove</Button>
                               </Link>
                               <Button variant='outline-info ml-1 btn-md'>Show</Button>
@@ -41,7 +41,7 @@ const Home = () => {
                </tbody>
             </Table>
          </div>
-      </div>
+      </div >
    )
 }
 
