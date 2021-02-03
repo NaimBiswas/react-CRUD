@@ -20,18 +20,21 @@ const Home = () => {
                   </tr>
                </thead>
                <tbody>
-                  <tr>
-                     <td>1</td>
-                     <td>Mark</td>
-                     <td>Otto</td>
-                     <td>@mdo</td>
-                     <td>
-                        <Button variant='outline-danger ml-1 btn-md'>Remove</Button>
-                        <Button variant='outline-info ml-1 btn-md'>Show</Button>
-                        <Button variant='outline-warning  ml-1 btn-md'>Edit</Button>
-                     </td>
-                  </tr>
-
+                  {
+                     users.map(user => [
+                        <tr>
+                           <td>1</td>
+                           <td>{user.name}</td>
+                           <td>Otto</td>
+                           <td>@mdo</td>
+                           <td>
+                              <Button variant='outline-danger ml-1 btn-md'>Remove</Button>
+                              <Button variant='outline-info ml-1 btn-md'>Show</Button>
+                              <Button variant='outline-warning  ml-1 btn-md'>Edit</Button>
+                           </td>
+                        </tr>
+                     ])
+                  }
                </tbody>
             </Table>
          </div>
