@@ -1,10 +1,41 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, Table } from 'react-bootstrap'
 
 const Home = () => {
    return (
       <div className='container'>
-         <Button className='btn btn-primary mt-5'>Add New User</Button>
+         <Button variant='outline-success mt-5 mb-2'>Add New User</Button>
+         <div className="table">
+            <Table striped bordered hover>
+               <thead>
+                  <tr>
+                     <th>#</th>
+                     <th>First Name</th>
+                     <th>Last Name</th>
+                     <th>Username</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>1</td>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                     <td>Jacob</td>
+                     <td>Thornton</td>
+                     <td>@fat</td>
+                  </tr>
+                  <tr>
+                     <td>3</td>
+                     <td colSpan="2">Larry the Bird</td>
+                     <td>@twitter</td>
+                  </tr>
+               </tbody>
+            </Table>
+         </div>
       </div>
    )
 }
