@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Button, Table } from 'react-bootstrap'
+import { UserContext } from './UserContext/UserContext';
 
 const Home = () => {
+   const [users, setUsers] = useContext(UserContext);
+
+
    return (
       <div className='container'>
          <Button variant='outline-success mt-5 mb-2'>Add New User</Button>

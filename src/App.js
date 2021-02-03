@@ -4,17 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Fragment } from 'react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/Home'
+import { UserProvider } from './components/UserContext/UserContext';
+
 
 function App() {
    return (
-
       <Fragment>
-         <div className="App">
-            <Router>
-               <Link to='/'></Link>
-               <Route exact path='/' component={Home}></Route>
-            </Router>
-         </div>
+         <UserProvider>
+            <div className="App">
+               <Router>
+                  <Link to='/'></Link>
+                  <Route exact path='/' component={Home}></Route>
+               </Router>
+            </div>
+         </UserProvider>
       </Fragment>
 
 
