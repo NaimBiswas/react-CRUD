@@ -25,8 +25,8 @@ const Home = () => {
                         <tr>
                            <td>1</td>
                            <td>{user.name}</td>
-                           <td>Otto</td>
-                           <td>@mdo</td>
+                           <td> {user.position} </td>
+                           <td> {user.salary} </td>
                            <td>
                               <Button variant='outline-danger ml-1 btn-md'>Remove</Button>
                               <Button variant='outline-info ml-1 btn-md'>Show</Button>
