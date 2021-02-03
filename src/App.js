@@ -16,8 +16,8 @@ function App() {
                <Router>
 
                   <Link to='/'></Link>
-                  <Route path='/delete/:id' component={Delete}></Route>
                   <Route exact path='/' component={Home}></Route>
+                  <Route path='/delete/:id' component={Delete}></Route>
                </Router>
             </div>
          </UserProvider>
