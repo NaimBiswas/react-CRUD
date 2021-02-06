@@ -8,7 +8,10 @@ const Home = () => {
    const [show, setShow] = useState(false);
 
    const handleClose = () => setShow(false);
-   const handleShow = () => setShow(true);
+   const handleShow = () => {
+      setShow(true);
+
+   }
    return (
       <div className='container'>
          <Button variant='outline-success mt-5 mb-2'>Add New User</Button>
@@ -58,9 +61,11 @@ const Home = () => {
                <Button variant="secondary" onClick={handleClose}>
                   No! I Don't
           </Button>
-               <Button variant="danger" onClick={handleClose}>
-                  Yes! Delete Him
-          </Button>
+               <Link to='/delete/id'>
+                  <Button variant="danger" onClick={handleClose}>
+                     Yes! Delete Him
+                  </Button>
+               </Link>
             </Modal.Footer>
          </Modal>
       </div >
